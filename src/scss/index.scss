@@ -1,5 +1,31 @@
-$red: tomato;
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import "~normalize.css";
+
+@import "header";
+@import "toolbar";
+@import "formula";
+@import "table";
+@import "dashboard";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
-  background-color: $red;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.excel {
+  position: relative;
+  height: 100%;
+  max-width: 100%;
+}
+
+.button {
+  @include button()
 }
